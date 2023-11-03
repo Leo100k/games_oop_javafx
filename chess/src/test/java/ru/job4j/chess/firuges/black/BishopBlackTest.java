@@ -21,15 +21,16 @@ class BishopBlackTest {
     @Test
     void way() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C1);
-        Cell [] expSteps = {Cell.D2, Cell.E3,Cell.F4,Cell.G5};
-        assertArrayEquals(expSteps,bishopBlack.way(Cell.G5));
+        Cell[] expSteps = {Cell.D2, Cell.E3, Cell.F4, Cell.G5};
+        assertArrayEquals(expSteps, bishopBlack.way(Cell.G5));
     }
 
     @Test
-    void WhenDiagonalIsTrue() {
+    void whenDiagonalIsTrue() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C1);
         assertThat(bishopBlack.isDiagonal(Cell.C1, Cell.G5)).isTrue();
     }
+
     @Test
     void whenCopyPositionOk() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C8);
