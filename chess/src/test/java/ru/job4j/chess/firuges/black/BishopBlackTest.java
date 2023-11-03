@@ -37,4 +37,5 @@ class BishopBlackTest {
         Figure bishopBlack1 = bishopBlack.copy(Cell.G5);
         assertThat(bishopBlack1.position()).isEqualTo(Cell.G5);
     }
+
 }
