@@ -4,5 +4,6 @@ public class SecondKing {
 
     void secondKing() {
         int y = 5;
+        int z = 7;
     }
 }
